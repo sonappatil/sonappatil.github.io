@@ -3,7 +3,7 @@
 function fetchUsers(callback) {
     const storedUsers = JSON.parse(localStorage.getItem('users')) || [];
     if (storedUsers.length === 0) {
-        // Simulated user data fetch function (meant to represent an API call)
+        // user data fetch function 
         setTimeout(() => {
             const initialUsers = [
                 { id: 1, name: 'Alice' },
@@ -18,7 +18,7 @@ function fetchUsers(callback) {
     }
 }
 
-// Function to display users
+//  display users
 function displayUsers(users) {
     const userListDiv = document.querySelector('#usersList');
     userListDiv.innerHTML = ''; // Clear the previous list
@@ -37,7 +37,7 @@ function displayUsers(users) {
     });
 }
 
-// Function to add a new user
+// add a new user
 function addUser(userName) {
     const storedUsers = JSON.parse(localStorage.getItem('users'))|| [] ;
     const newUser = { id: Date.now(), name: userName };
@@ -46,7 +46,7 @@ function addUser(userName) {
     fetchUsers(displayUsers);
 }
 
-// Function to delete a user by ID
+// delete a user 
 function deleteUser(userId) {
     let storedUsers = JSON.parse(localStorage.getItem('users')) || [];
     storedUsers = storedUsers.filter((user) => user.id !== userId);
@@ -54,7 +54,7 @@ function deleteUser(userId) {
     fetchUsers(displayUsers);
 }
 
-// Function to search for users by name
+//  search for users by name
 function searchUsers(query) {
     const storedUsers = JSON.parse(localStorage.getItem('users')) || [];
     const filteredUsers = storedUsers.filter((user) =>
@@ -66,7 +66,7 @@ function searchUsers(query) {
 // Fetch and display users
 fetchUsers(displayUsers);
 
-// Event listener for the Add User form
+// Event listener for Add User form
 const userForm = document.querySelector('#userForm');
 userForm.addEventListener('submit', (e) => {
     e.preventDefault();

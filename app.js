@@ -2,7 +2,7 @@
 // Function to fetch users from local storage or fetch from API
 function fetchUsers(callback) {
     const storedUsers = JSON.parse(localStorage.getItem('users')) ;
-    if (storedUsers.length === 0) {
+    if (!storedUsers || storedUsers.length === 0) {
         // Simulated user data fetch function (meant to represent an API call)
         setTimeout(() => {
             const initialUsers = [

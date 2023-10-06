@@ -1,0 +1,156 @@
+/* styles.css */
+
+/* Reset some default margin and padding */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* Set a background color for the body */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the navbar */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  20px;
+    padding-top: 19px;
+    padding-bottom: 18px;
+
+}
+
+.navbar-logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500%;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Style the search input and button */
+#searchUser {
+    height: 34px;
+    width: 260px;
+    padding: 0 11px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    outline: none;
+    font-size: 16px;
+   
+}
+
+#search-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 16px;
+    
+}
+#search-button:hover {
+    background-color: #45a049;
+}
+
+/* Style the container for user list */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+height: auto;
+    width: 636px;
+    margin-top: 100px;
+
+}
+
+/* Style the user list header */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    padding-left: 250px;
+
+}
+
+/* Style the Add User form */
+#addUser {
+    margin-bottom: 20px;
+}
+
+#userForm {
+    display: flex;
+}
+
+#newUserName {
+    flex: 1;
+    height: 34px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 0 10px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+/* Style the Add User button */
+#userForm button {
+    background-color: #000080;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 16px;
+}
+#userForm button:hover {
+    background-color: black;
+}
+
+/* Style the user list */
+#usersList {
+   font-size: 20px;
+    flex-wrap: wrap;
+    display: flex;
+
+    
+
+}
+
+/* Style individual user cards */
+#usersList > div {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    padding-left: 15px;
+}
+
+/* Style the Delete button */
+#usersList button {
+    background-color: #eb091e;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 8px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+

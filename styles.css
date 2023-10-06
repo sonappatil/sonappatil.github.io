@@ -1,19 +1,19 @@
 /* styles.css */
 
-/* Reset some default margin and padding */
+
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
     
 }
 
-/* Set a background color for the body */
+
 body {
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
 }
 
-/* Style the navbar */
+
 .navbar {
     background-color: #333;
     color: #fff;
@@ -38,7 +38,6 @@ body {
     align-items: center;
 }
 
-/* Style the search input and button */
 #searchUser {
     height: 34px;
     width: 260px;
@@ -64,8 +63,6 @@ body {
 #search-button:hover {
     background-color: #45a049;
 }
-
-/* Style the container for user list */
 .container {
     max-width: 800px;
     margin: 20px auto;
@@ -80,7 +77,6 @@ height: auto;
 
 }
 
-/* Style the user list header */
 h1 {
     font-size: 24px;
     margin-bottom: 20px;
@@ -88,7 +84,6 @@ h1 {
 
 }
 
-/* Style the Add User form */
 #addUser {
     margin-bottom: 20px;
 }
@@ -107,7 +102,6 @@ h1 {
     font-size: 16px;
 }
 
-/* Style the Add User button */
 #userForm button {
     background-color: #000080;
     color: #fff;
@@ -121,17 +115,13 @@ h1 {
     background-color: black;
 }
 
-/* Style the user list */
 #usersList {
    font-size: 20px;
     flex-wrap: wrap;
     display: flex;
 
-    
-
 }
 
-/* Style individual user cards */
 #usersList > div {
     background-color: #f9f9f9;
     border-radius: 8px;
@@ -143,7 +133,6 @@ h1 {
     padding-left: 15px;
 }
 
-/* Style the Delete button */
 #usersList button {
     background-color: #eb091e;
     color: #fff;
